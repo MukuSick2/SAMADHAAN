@@ -3,6 +3,8 @@ INTRODUCTION:
 
 According  To www.standardizations.org ,There Are 10 Million Non-Governmental Organisations In The World Working For The Welfare Of Our Society and Providing Resources To Those Who Really Need Someone’s Help and Guide ,How They Have To Tackle Their Respective Situations To Survive In Today’s Environment. 
 These Numbers might shock all of us. But that’s the truth that we cannot change at the moment. Can we  Imagine, How many Unknown Organisations still dealing With Major Problems And Working For The Same .Here, We are Talking About Planet , Plants , Animals , Soil , Water Bodies, etc. And A Lot More.
+![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/f5cae3d9-1f0e-4338-823a-ba9bf4ad191b)
+
 
 Patients, those are suffering from Diseases And Can Not Afford For Their Surgeries. So, We Make a Common Platform  For the Known As Well As Unknown  Organisations In The Form OF Web Site ,Which Will Help Them To Collaborate And Connect With Other Organisations.
 We also have some future plans that can help in growth for the same. But cannot tell in front of class due to COPYRIGHT.
