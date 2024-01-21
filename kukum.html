@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="kukum.css">
+</head>
+<body>
+	<video  class="video-bg" src="vecteezy_abstract-color-changing-hypnotizing-energy-magical-bright_23755303_133.mp4" autoplay muted loop></video>
+	<div class="me">
+		<div class="area">
+			<h2>SAMADHAAN</h2>
+			<h3>VOLUNTEER FORM</h3>
+			<label for="name">Full Name:</label>
+			<input type="text" placeholder="Enter Your Name">
+			<label for="age">Age:</label>
+			<input type="number" placeholder="Enter Your Age">
+			<label for="gender">Gender</label>
+			<select name="gender" required>
+				<option value="">--Select--</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+			<label for="email">Email ID:</label>
+			<input type="email" placeholder="Enter Your Email" required>
+			<label for="numbers">Mobile Number:</label>
+			<input for="numbers" max-length="10" placeholder="Enter You Mobile Number" required>
+			<label for="skills" >Address</label>
+			<textarea name="skills" required autocomplete="off"></textarea>
+
+			<label for="availability">Availability </label>
+			<textarea name="availability" required autocomplete="off"></textarea>
+			
+			
+			<div class="bt-area" onclick="sendEmail()">Proceed</div>
+			<div class="link-area"><a href="">Forgot details??</a></div>
+		</div>
+	</div>
+	<footer>
+		<ul class="social">
+			<li><a href="https://www.facebook.com/ChitkaraU/"><img src="facebook logo.png" alt="img" height="50" width="50" ></a></li>
+			<li><a href="https://twitter.com/ChitkaraU/status/1640367525526634497"><img src="twitter logo 5.png" alt="img" height="50" width="50" ></a></li>
+			<li><a href="https://www.instagram.com/chitkarau/?hl=en"><img src="insta logo 7.png" alt="img" height="50" width="50"></a></li>
+		</ul>
+	<p>Copyright &copy; 2023 SAMADHAAN.</p>
+	<p>All rights reserved.</p>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+		
+		function sendEmail() {
+			Email.send({
+				Host: "smtp.elasticemail.com",
+				Username: "samadhaan2423@gmail.com",
+				Password: "A01E19856B0C63A2C496E193F372BED1FF6A",
+				To: "dhruv3781.be22@chitkara.edu.in",
+				From: "samadhaan2423@gmail.com",
+				Subject: "Confirmation Of The VOLUNTEER.",
+				Body: "Hello Sir / Ma'am , Now You Are A Member Of SAMADHAAN Community . Latest Updates Regarding The Collaborations Would Be Notified On Our Social Media Platforms. So, You Are Requested To Follow Our Instagram, Facebook , And Twitter Handle." 
+		})
+			.then(
+			alert("THANKS FOR YOUR CONTRIBUTION!!!. PLZ CHECK YOUR MAIL")
+		);
+		}
+	</script>
+
+</body>
+</html>

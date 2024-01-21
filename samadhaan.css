@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+    background-color: aquamarine;
+}
+fieldset
+{
+    border-width: 50%;
+    border-style:ridge;
+    border-color: aqua;
+}
+header {
+	background-color: #ece9e9;
+	padding: 10px;
+	text-align: right;
+}
+
+nav
+{
+  width:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  padding: 20px 8%;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li{
+	display:inline-block;
+	list-style: none;
+	margin-left:0px ;
+}
+
+nav a {
+	display:flexbox;
+	padding: 10px;
+	text-decoration: none;
+	color: #333;
+}
+
+nav a:hover {
+	background-color: #ddd;
+}
+
+#banner {
+	background-image: url(background.jpeg);
+	background-size: cover;
+	height: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+}
+
+#banner h1 {
+	font-size: 48px;
+	margin: 0;
+}
+
+#banner p {
+	font-size: 24px;
+	margin: 20px 0;
+}
+
+#banner button {
+    font-size: 16px;
+	background-color: #ff5722;
+	color: #fff
+}
+
+.samadhaan
+{
+  position: absolute;
+  align-items:center;
+}
+@media (min-aspesct-ratio:16/9)
+{
+  .samadhaan{
+    width:100px;
+    height:auto;
+  }
+}
+@media (max-aspesct-ratio:16/9)
+{
+  .samadhaan{
+    width:100px;
+    height:100px;
+ }
+} 
+
+
