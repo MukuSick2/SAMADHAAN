@@ -49,9 +49,10 @@ OUTPUT:
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/52d88193-475f-41a2-9a96-7ca172ac4e4d)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/8a71c8c8-bec1-4f21-8aec-d0ce21fd9d4e)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/e59a8ab9-af20-4374-8a28-2aec188d50ce)
-![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/fcb80746-464f-49be-b927-3917062fa780)
-![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/b6cd0e03-4bd6-4daa-b86c-d7aa7da584f0)
-![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/ebaeecf8-0e0a-4525-a35b-2cc1d2806764)
+![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/97fcee0b-b694-4b26-95c0-2971c78bd9cc)
+![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/8da320b1-d7cd-4eca-a7d3-f0810f2af862)
+![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/8c0a391e-ec33-448d-b737-2d2f57c2f06e)
+
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/eeff3124-543f-47d2-8570-f94407cc7464)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/03155633-3984-4aaf-9563-d521b765647c)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/30c469f8-76c6-4a54-8aaf-0243bed8bd06)
