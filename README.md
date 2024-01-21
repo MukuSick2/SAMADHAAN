@@ -30,7 +30,6 @@ They Always Think That His / Her Donation Either It Could Be Food , Clothes , Re
 Medical Facilities Or Financial Support Has / Have Gone To The Right Hands Or Not.
 So We Have Made A Common Platform For The Known As Well As Unknown Organization Where
 They Can Connect And Do Collaborations For the Same..
-![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/f136556e-6d2c-47a2-9118-1ed916413456)
 
 KEY FEATURES:
 
