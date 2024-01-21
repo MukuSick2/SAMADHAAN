@@ -66,11 +66,13 @@ OUTPUT:
 REFERENCES:
 
 1.Knowledge Gained by Youtube Videos:
+
 https://www.youtube.com/watch?v=D7oqKEqSlAU 
 https://www.youtube.com/watch?v=-rcRf7yswfM&t=371s 
 https://www.youtube.com/watch?v=Gku9iMSMbWg&t=486s 
 https://www.youtube.com/watch?v=7DPqHb3Bv_g 
 2.Data For Research:
+
 MukkaMaar - Give Fundraisers 
 K.C. Mahindra Education Trust - Give Fundraisers 
 Milaan Foundation - Give Fundraisers 
@@ -87,7 +89,7 @@ https://www.agewellfoundation.org
 www.mijwan.org 
 Best NGO in Mumbai | NGO for Urban Poor India | Apnalaya
 3. Materials for adding data in the Website to make it More Attractive and Dynamic:
- 
+
 https://pixabay.com/videos/plasma-smoke-toxic-pollution-1469/?download 
 
 
