@@ -42,8 +42,7 @@ ARCHITECTURE:
 
 OUTPUT:
 
-![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/189e21dc-d35f-4507-89dd-b013206ac7c8)
-![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/f67a70c1-0367-4729-a795-65e6af28dcae)
+![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/97951460-462b-4117-a92a-f4d9cfc81db7)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/9fb85a8a-1fa1-4f3b-b569-2cccf3c9852f)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/15d2a9fd-0f51-4b0f-b07c-a28de7b6ee14)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/f1f42468-e06c-482f-88e6-f41c78777fef)
