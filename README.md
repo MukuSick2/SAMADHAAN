@@ -1,14 +1,16 @@
 # SAMADHAAN
-INTRODUCTION
+INTRODUCTION:
+
 According  To www.standardizations.org ,There Are 10 Million Non-Governmental Organisations In The World Working For The Welfare Of Our Society and Providing Resources To Those Who Really Need Someone’s Help and Guide ,How They Have To Tackle Their Respective Situations To Survive In Today’s Environment. 
 These Numbers might shock all of us. But that’s the truth that we cannot change at the moment. Can we  Imagine, How many Unknown Organisations still dealing With Major Problems And Working For The Same .Here, We are Talking About Planet , Plants , Animals , Soil , Water Bodies, etc. And A Lot More.
 
 Patients, those are suffering from Diseases And Can Not Afford For Their Surgeries. So, We Make a Common Platform  For the Known As Well As Unknown  Organisations In The Form OF Web Site ,Which Will Help Them To Collaborate And Connect With Other Organisations.
 We also have some future plans that can help in growth for the same. But cannot tell in front of class due to COPYRIGHT.
 MODULES:
-            We Have Made A Website Using Various Tags And Languages Such As HTML , CSS ,  
-         And Javascript . We Have Tried Our Best To Make This As we Are Beginners . It  
-         Consists Of Various Modules Which Are Explained In Detail as Shown below: 
+
+We Have Made A Website Using Various Tags And Languages Such As HTML , CSS ,  
+And Javascript . We Have Tried Our Best To Make This As we Are Beginners . It  
+Consists Of Various Modules Which Are Explained In Detail as Shown below: 
 Module 1 – LOG-IN  And SIGN-IN Page For User.
 Module 2 – Main Page Where All Other Modules Are Interconnected with It.
 Module 3 – DONATION Pages For User for their Contribution.
@@ -19,7 +21,8 @@ Module 6 – About Us And Contact Us Page For Users Knowledge.
 Module 7 – List of Influencers , Those are contributing and collaborating with 
 SAMADHAAN..
 
-PROBLEM STATEMENT
+PROBLEM STATEMENT:
+
 There Are So Many Active Organizations As Called As Non - Governmental Organizations [NGO]
 Working On The Welfare Of The Poor And Needy People And Other Major Issues / Problems. They
 Have Their Own Websites But There Is An Empty Space For The Users / Donators Where
@@ -29,14 +32,17 @@ So We Have Made A Common Platform For The Known As Well As Unknown Organization 
 They Can Connect And Do Collaborations For the Same..
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/f136556e-6d2c-47a2-9118-1ed916413456)
 
-KEY FEATURES
+KEY FEATURES:
+
 . In This Website , Client Can Donate To The Their Respective  Stuff And We Will Help Them In The Mode Of Transportation Just Like Zomato , Swiggy And Uber Eats .
 . In Return , We Will Send Then The Client A Video Of Giving Their Stuff  And Contact Number Of The Needy Person If He / She Have Or The Community Number Where They Live Via Mail.
 
-ARCHITECTURE
+ARCHITECTURE:
+
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/4d924624-8f7f-4f9e-8175-b860cfff631e)
 
-OUTPUT
+OUTPUT:
+
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/189e21dc-d35f-4507-89dd-b013206ac7c8)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/f67a70c1-0367-4729-a795-65e6af28dcae)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/9fb85a8a-1fa1-4f3b-b569-2cccf3c9852f)
@@ -58,7 +64,8 @@ OUTPUT
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/d06c73a3-c14c-492f-8ff9-fea59bc5572d)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/a0ccca07-6007-4e42-886d-4548b2d99006)
 
-REFERENCES
+REFERENCES:
+
 1.Knowledge Gained by Youtube Videos:
 https://www.youtube.com/watch?v=D7oqKEqSlAU 
 https://www.youtube.com/watch?v=-rcRf7yswfM&t=371s 
