@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>NGO Volunteer Form</title>
+	<!-- <link rel="stylesheet" type="text/css" href="volunteer.css"> -->
+	<link rel="stylesheet" href="C:\Users\hp\Desktop\pbl2 final\volunteer.css">
+	<script src="volun.js"></script>
+</head>
+
+<body>
+	<!-- <video src="vecteezy_abstract-color-changing-hypnotizing-energy-magical-bright_23755303_133.mp4" muted autoplay loop></video> -->
+	<div class="container">
+		<h1>SAMADHAAN VOLUNTEER FORM</h1>
+		<form action="final.html">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required placeholder="Enter Your Name">
+
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" required placeholder="Enter Your Email ID">
+
+			<label for="phone">Phone</label>
+			<input type="text" id="phone" name="phone" required placeholder="Enter Your Mobile Number">
+			<!-- <select type="text" id="phone" name="phone" required placeholder="Enter Your Mobile Number"></select> -->
+
+
+
+			<label for="gender">Gender</label>
+			<select id="gender" name="gender" required>
+				<option value="">--Select--</option>
+				<option value="male">Male</option>
+				<option value="female">Female</option>
+				<option value="other">Other</option>
+			</select>
+
+			<label for="skills">Address</label>
+			<textarea name="skills" required autocomplete="off"></textarea>
+
+			<label for="availability">Availability</label>
+			<textarea name="availability" required autocomplete="off"></textarea>
+
+			<input type="submit" value="Submit" onclick="sendEmail()">
+			<input type="reset" value="reset" onclick="alert('YOUR FORM IS RESET.')">
+		</form>
+	</div>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+		
+		function sendEmail() {
+			Email.send({
+				Host: "smtp.elasticemail.com",
+				Username: "samadhaan2423@gmail.com",
+				Password: "A01E19856B0C63A2C496E193F372BED1FF6A",
+				To: "dhruv3781.be22@chitkara.edu.in",
+				From: "samadhaan2423@gmail.com",
+				Subject: "Confirmation Of The VOLUNTEER.",
+				Body: "Hello Sir / Ma'am , Now You Are A Member Of SAMADHAAN Community . Latest Updates Regarding The Collaborations Would Be Notified On Our Social Media Platforms. So, You Are Requested To Follow Our Instagram, Facebook , And Twitter Handle." 
+		})
+			.then(
+			alert("mail sent successfully")
+		);
+		}
+	</script>
+</body>
+
+</html>
