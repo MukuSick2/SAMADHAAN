@@ -1,0 +1,352 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Online Seat Allocation INI-CET</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+
+    <script src="../fonts/AllFont/webfont.min.js"></script>
+    <script>
+        WebFont.load({
+            google: { "families": ["Roboto:300,400,500,700,900"] },
+            custom: { "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../fonts/AllFont/fonts.min.css'] },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+
+    <link href="/Content/sweetalert2.min.css" rel="stylesheet" id="theme-styles">
+    <link href="/Content/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <link href="/Content/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" />
+    <link href="/Content/datatables/responsive.bootstrap4.min.css" rel="stylesheet" />
+    <link href="/Content/datatables/responsive.dataTables.min.css" rel="stylesheet" />
+    <link href="/Content/datatables/buttons.bootstrap4.min.css" rel="stylesheet" />
+    <link href="/Content/datatables/fixedHeader.dataTables.min.css" rel="stylesheet" />
+
+    
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="/Content/styleNew.css" rel="stylesheet">
+    <link href="/Content/extra.css" rel="stylesheet">
+    
+    <link href="/Content/typography.css" rel="stylesheet" />
+    <link href="/Content/cssStyle.css" rel="stylesheet" />
+
+
+    <script type="text/javascript">
+        function isNumberKeyOnly(e) {
+            var charCode = (e.which) ? e.which : event.keyCode
+            if ((charCode > 31) && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+        }
+        function isNumberKeywithPoint(e) {
+            var charCode = (e.which) ? e.which : event.keyCode
+            if ((charCode > 46) && (charCode > 31) && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="main-header">
+            <div class="logo-header" data-background-color="blue">
+
+                <a href="/Dashboard" class="logo">
+                    <img src="/Images/logo-white.png" />
+                </a>
+
+            </div>
+            <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+                <div class="nav-toggle">
+                    <button class="btn btn-toggle toggle-sidebar">
+                        <i class="icon-menu"></i>
+                    </button>
+                </div>
+                <div class="container-fluid">
+                    <ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+                        <li class="nav-item toggle-nav-search hidden-caret">
+                            <a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown hidden-caret">
+                            <div class="u-text text-yellow-soft">
+                                <h4 class="mb-0"><span class="lblUsername"></span></h4>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown hidden-caret">
+
+
+                            <a class="dropdown-toggle profile-pic d-flex align-items-center" data-toggle="dropdown" href="#" aria-expanded="false">
+                                <div class="avatar-sm">
+                                    <img src="/Images/user.png" alt="..." class="avatar-img rounded-circle">
+                                </div>
+                            </a>
+
+                            <ul class="dropdown-menu dropdown-user animated fadeIn">
+
+                                
+                                <li>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="/Login/ChangePassword">Change Password</a>
+                                    <a class="dropdown-item" href="/CandidateLogin" id="btnLogout">Logout</a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar sidebar-style-2">
+            <div class="sidebar-wrapper scrollbar scrollbar-inner">
+                <div class="sidebar-content">
+                    <ul class="nav nav-primary">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/CandidateDashboard/Instruction">
+                                <i class="fas fa-home"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Dashboard/ImportantDates">
+                                <i class="fas fa-fw fa-calendar"></i>
+                                <span>
+                                    Important Dates
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Dashboard/Information">
+                                <i class="fas fa-fw fa-file-alt"></i>
+                                <span>
+                                    Important Information
+                                </span>
+                            </a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Sidebar -->
+
+        
+
+
+
+
+<div class="main-panel">
+    <div class="content">
+        <div class="page-inner">
+            <div class="card">
+
+                <div class="card-body py-2">
+                    <div class="alert alert-success mb-2 mb-0 alert-dismissible d-print-none" id="msgChoiceSave">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                        Your choices of Institute and Subject/Speciality and their order have been submitted successfully for this round!
+                    </div>
+                    <div class="">
+                        <p class="text-green font-weight-600" id="PostLock-msg"></p>
+                        <div class="text-center mb-2 d-print-none">
+                            <button type="button" id="btnPrint" onclick="javascript:window.print();" class="btn btn-success btn-shadow ">Print Page</button>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="p-0 ">
+                                        <table class="table table-borderless mb-0 nobg">
+                                            <tr>
+                                                <th class="vert-center">
+                                                    <img src="/Images/logo.png" class="h80px" />
+                                                </th>
+                                                <th class="text-center word-break">
+                                                    <h3 class="mb-0 font-weight-500">अखिल भारतीय आयुर्विज्ञान संस्थान, नई दिल्ली</h3>
+                                                    <h2 class="mb-0 b text-dark">All India Institute Of Medical Sciences, New Delhi</h2>
+                                                    <h3 class="mb-0 b text-dark">Online Seat Allocation INI-CET July 2023</h3>
+                                                </th>
+                                                <th class="vert-center" style="text-align:right;">
+                                                    <h5 class="p-2 border text-center text-primary">Open Round </h5>
+                                                </th>
+                                            </tr>
+                                        </table>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="d-md-flex justify-content-md-between">
+                                            <h4 class="text-primary my-3">Candidate Detail<i class="fas fa-angle-right f13 ml-2"></i></h4>
+                                            <div class="border form-inline ht-40 px-3 mb-2 mb-sm-0">
+                                                <label class="pr-3 mb-0 b">Roll No</label>
+                                                <label class="colon-sm position-relative mb-0 b" id="RollNo"></label>
+                                            </div>
+                                        </div>
+                                        <table class="table table-borderless">
+                                            <tr>
+                                                <td><span class="font-weight500">Name</span></td>
+                                                <td><label id="txtName"></label></td>
+                                                <td><span class="font-weight500">Registration Id</span></td>
+                                                <td><label id="Qualifying"></label></td>
+                                                <td><span class="font-weight500">Email Id</span></td>
+                                                <td><label id="EmailId"></label></td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="font-weight500">Course</span></td>
+                                                <td><label id="CourseName"></label></td>
+                                                <td><span class="font-weight500">Over All Rank</span></td>
+                                                <td><label id="OverAllRank"></label></td>
+                                                <td><span class="font-weight500">Category</span></td>
+                                                <td><label id="Category"></label></td>
+                                            </tr>
+                                            <tr class="IsNormal d-none">
+                                                <td><span class="font-weight500">Is RAS</span></td>
+                                                <td><label id="IsRAS"></label></td>
+                                                <td><span class="font-weight500">Is Karnataka Domicile</span></td>
+                                                <td><label id="IsKarnataka"></label></td>
+                                                <td><span class="font-weight500">Is PWBD</span></td>
+                                                <td><label id="IsPWBD"></label></td>
+                                            </tr>
+                                            <tr class="IsNormal d-none">
+                                                <td colspan="6"><span class="font-weight500 mr-3">Is North East Domicile</span> <label id="IsNorth"></label></td>
+                                            </tr>
+                                            <tr class="IsSpecial d-none">
+                                                <td colspan="6"><span class="font-weight500 mr-3">Applied Under</span> <label id="CanType"></label></td>
+                                            </tr>
+                                        </table>
+
+                                        
+
+                                        <div class="d-md-flex justify-content-md-between">
+                                            <h4 class="text-primary my-3">List of applied Institute and Subject/Speciality in order of preference. </h4>
+                                            <div class="form-inline ht-40 px-3 mb-2 mb-sm-0">
+                                                Total Applied <span id="lblChTotal" class="ml-3 border border-secondary b px-3 py-1">0</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+
+                                        <div class="table-responsive">
+                                            <table class="table border border-purple" id="tblData">
+                                                <thead class="">
+                                                    <tr>
+
+                                                        <th class="wd-30-f">Order</th>
+                                                        <th class="text-nowrap">Institute</th>
+
+                                                        <th class="text-nowrap">Subject/Speciality</th>
+
+
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="DataBody">
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <span class="d-none" id="spnRId"></span>
+    <span class="d-none" id="spnRoleId">1</span>
+</div>
+
+
+<script>
+
+                    //$('#btnSaveInfo').click(function () {
+                    //    $("#divEditInfo").addClass("d-none");
+                    //    $("#divConfirmInfo").addClass("d-none");
+                    //    $("#divValidateInfo").removeClass("d-none");
+                    //});
+
+                //});
+</script>
+
+
+    </div>
+
+    
+    <script src="/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="/Scripts/popper.min.js"></script>
+    <script src="/Scripts/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery UI -->
+    
+
+    <script src="/Scripts/jquery.scrollbar.min.js"></script>
+    <script src="/Scripts/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <script src="/Scripts/datatables/jquery.dataTables.min.js"></script>
+    <script src="/Scripts/datatables/dataTables.responsive.min.js"></script>
+    <script src="/Scripts/datatables/responsive.dataTables.min.js"></script>
+    <script src="/Scripts/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="/Scripts/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="/Scripts/datatables/dataTables.buttons.min.js"></script>
+    <script src="/Scripts/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="/Scripts/datatables/jszip.min.js"></script>
+    <script src="/Scripts/datatables/pdfmake.min.js"></script>
+    <script src="/Scripts/datatables/vfs_fonts.js"></script>
+    <script src="/Scripts/datatables/buttons.html5.min.js"></script>
+    <script src="/Scripts/datatables/buttons.print.min.js"></script>
+    <script src="/Scripts/datatables/datatables-call.js"></script>
+    <script src="/Scripts/datatables/dataTables.fixedHeader.min.js"></script>
+
+    <script src="/Scripts/sweetalert2.min.js"></script>
+    <script src="/Scripts/moment.min.js"></script>
+    <script src="/Scripts/bootstrap-datetimepicker.min.js"></script>
+    
+    <script src="/DeveloperJS/Master.js"></script>
+    <script src="/Scripts/Site/SiteMain.js"></script>
+    
+    <script src="/DeveloperJS/CandidateJS/CandidateChoicePrint.js?16"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.datepicker').datetimepicker({
+                //format: "L",
+                format: 'DD/MM/YYYY'
+            });
+            $('.timepicker').datetimepicker({
+                format: "LT"
+            });
+            $('.datetimepicker').datetimepicker({
+                sideBySide: true
+            });
+        });
+    </script>
+</body>
+</html>
+

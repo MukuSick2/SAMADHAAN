@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SAMADHAAN Donation Form</title>
+    <link rel="stylesheet" type="text/css" href="fordonation.css">
+  </head>
+  <body background="giphy.gif">
+    <div class="container">
+      <form action="final.html" >
+        <h1>Donate to SAMADHAAN</h1>
+        <p>Please fill in this form to donate.</p>
+        <hr>
+        
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="amount"><b>Amount</b></label>
+        <input type="number" placeholder="Enter Amount" name="amount" required>
+
+        <label for="card"><b>Credit Card Number</b></label>
+        <input type="text" placeholder="Enter Credit Card Number" name="card" required>
+
+        <label for="exp"><b>Expiration Date</b></label>
+        <input type="text" placeholder="MM/YY" name="exp" required>
+
+        <label for="cvv"><b>CVV</b></label>
+        <input type="password" placeholder="Enter CVV" name="cvv" required>
+        
+        <div class="clearfix">
+          <button type="submit" class="donatebtn" onclick="sendEmail()">Donate</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script type="text/javascript">
+		
+		function sendEmail() {
+			Email.send({
+				Host: "smtp.elasticemail.com",
+				Username: "samadhaan2423@gmail.com",
+				Password: "A01E19856B0C63A2C496E193F372BED1FF6A",
+				To: "dhruv3781.be22@chitkara.edu.in",
+				From: "samadhaan2423@gmail.com",
+				Subject: "Confirmation Of The Request For Cloth Donation.",
+				Body: "Hello Sir / Ma'am , We Are Very Thankful For The Effort Made By Your Soul. Your Donated Stuff Will Be Picked-Up And Delieved To Needy People in Coming 4-5 Business Days.You Can Also Contact Us." + "  Contact Number:+91-9416279315" + "  Thank You"
+		})
+			.then(
+			alert("THANK YOU FOR YOUR CONTRIBUTION!!!")
+		);
+		}
+	</script>
+  </body>
+</html>

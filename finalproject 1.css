@@ -1,0 +1,68 @@
+
+body{
+  background-color: aquamarine;
+  margin: 0;
+font-family: Arial, sans-serif;
+font-size: 16px;
+line-height: 2;
+color: rgb(71, 96, 1);
+  background-color: aquamarine;
+
+
+}
+fieldset
+{
+  border-width: 50%;
+  border-style:ridge;
+  border-color: aqua;
+}
+.login {
+  background-color: rgb(180, 203, 196);
+  
+    width: 775px;
+    margin: 93px auto;
+    padding: 28px;
+    border: 1px solid rgb(188, 136, 81);
+    border-radius: 5px;
+    background-color: rgb(188, 136, 81);
+    text-align: center;
+  
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 30px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border:0cqmax;
+    border-radius: 4px;
+    background-color:rgb(141, 164, 167);
+    font-size: 16px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(27, 164, 139);
+    color: rgb(108, 101, 88);
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color:rgb(149, 209, 209);
+  }
+  

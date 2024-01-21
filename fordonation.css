@@ -1,0 +1,75 @@
+/* Style the container */
+.container {
+    display: block;
+    margin: auto;
+    width: 50%;
+    border-radius: 56px;
+    background-color:beige;
+    padding: 20px;
+  }
+  body{
+    margin: 0;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+    background-color: aquamarine;
+
+
+}
+fieldset
+{
+    border-width: 50%;
+    border-style:ridge;
+    border-color: rgb(0, 0, 0);
+    box-shadow: #dad4d4;
+}
+  /* Style the input fields */
+  input[type=text], input[type=password], input[type=email], input[type=number] {
+    width: 100%;
+    background-color: antiquewhite;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #2bb9c6;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Style the donate button */
+  .donatebtn {
+    background-color: #04AA6D;
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  /* Float the donate button to the right */
+  .donatebtn:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Clear floats after the donate button */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style the heading and paragraph */
+  h1, p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+  }
+  
+  /* Add a horizontal line */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
