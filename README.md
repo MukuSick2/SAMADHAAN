@@ -56,8 +56,8 @@ OUTPUT:
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/9c5f168b-9171-40f9-a5c0-7aa1e35d4064)![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/57682451-6085-41be-9235-d56751dd7188)
 
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/b3e129f3-e0e2-4c81-b196-082e439a464e)
-![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/9a57a62b-7873-446a-926a-49f3d5c06359)
-![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/454f36f5-6257-4b60-b007-d0663cda08dc)
+![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/43e447df-50ba-4ba2-99a1-5a98b74ed740)
+![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/bd947d14-ffcc-4171-ab2c-3aa0b8c92efd)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/d06c73a3-c14c-492f-8ff9-fea59bc5572d)
 ![image](https://github.com/MukuSick2/SAMADHAAN/assets/131860691/a0ccca07-6007-4e42-886d-4548b2d99006)
 
